@@ -3,8 +3,8 @@ marketing_dbt:
   outputs:
     dev:
       type: postgres
-      host: postgres-dest
-      port: 5432
+      host: "{{ env_var('DBT_HOST', 'postgres-dest') }}"
+      port: "{{ env_var('DBT_PORT', '5432') | int }}"
       user: marketinguser
       password: marketingpass
       dbname: marketingdb_destination
