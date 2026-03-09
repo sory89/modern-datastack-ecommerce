@@ -1,27 +1,29 @@
-.env
-# GitHub Actions cache
-/.github/.cache
-
-# Docker cache
-docker/logs/
-docker/minio/
-docker/plugins/
-docker/postgres/
-
-# DBT cache
-marketing_dbt/.dbt/
-marketing_dbt/analyses/
-marketing_dbt/logs/
-marketing_dbt/macros/
-marketing_dbt/seeds/
-marketing_dbt/target/
-marketing_dbt/tests/
-
-.env
+# Environnement Python
+mark_env/
+venv/
 __pycache__/
 *.pyc
-.vscode/
-.idea/
-.DS_Store
-docker-compose.override.yml
+*.pyo
+
+# Docker data volumes
+docker/postgres/data/
+docker/postgres-dest/data/
+docker/minio/data/
+docker/logs/
+docker/airflow_passwords/
+docker/datahub/
+
+# dbt
+marketing_dbt/target/
+marketing_dbt/dbt_packages/
+marketing_dbt/logs/
+
+# Logs
 logs/
+*.log
+
+# Env
+.env
+
+# OS
+.DS_Store
