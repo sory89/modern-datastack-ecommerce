@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: ecommerce_sales
+        description: "Données brutes ecommerce depuis MinIO via Kafka"

@@ -1,0 +1,12 @@
+marketing_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres-dest
+      port: 5432
+      user: marketinguser
+      password: marketingpass
+      dbname: marketingdb_destination
+      schema: raw
+      threads: 4
