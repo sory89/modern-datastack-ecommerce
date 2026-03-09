@@ -1,5 +1,6 @@
 # GitHub Actions cache
 /.github/.cache
+mark_env/
 
 # Docker cache
 docker/logs/
