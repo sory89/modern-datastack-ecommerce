@@ -20,30 +20,166 @@ End-to-end **Modern Data Engineering pipeline** that captures ecommerce data cha
 
 ## 🏗️ Architecture
 
-Data Source (PostgreSQL Ecommerce DB)
-        │
-        │ CDC
-        ▼
-Debezium + Kafka
-        │
-        ▼
-Object Storage (MinIO / S3)
-        │
-        ▼
-Raw Layer (Bronze)
-        │
-        ▼
-dbt Transformations
-        │
-        ▼
-Cleaned Layer (Silver)
-        │
-        ▼
-Business Layer (Gold)
-        │
-        ▼
-Power BI / Analytics
-
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1e42ab85-f112-4258-9f0c-6272b36f6376" />
 
+⚙️ Pipeline Overview
+
+This project demonstrates a Modern Data Stack pipeline that processes ecommerce transactional data in real-time using streaming and ELT architecture.
+
+Key features
+
+Change Data Capture using Debezium
+
+Real-time streaming with Apache Kafka
+
+Data lake storage using MinIO (S3 compatible)
+
+Data transformation using dbt
+
+Workflow orchestration using Apache Airflow
+
+Business analytics using Power BI
+
+🏗 Medallion Architecture
+
+The project follows the Bronze / Silver / Gold architecture.
+
+🥉 Bronze (Raw)
+
+Raw ingestion from Kafka events.
+
+Characteristics:
+
+immutable data
+
+JSON ingestion
+
+historical replay possible
+
+🥈 Silver (Cleaned)
+
+Cleaned and structured datasets.
+
+Transformations include:
+
+schema normalization
+
+data validation
+
+deduplication
+
+🥇 Gold (Business)
+
+Business-ready datasets:
+
+Examples:
+
+daily revenue
+
+top selling products
+
+customer lifetime value
+
+order trends
+
+🚀 DevOps & DataOps
+
+This project integrates DevOps best practices for data platforms.
+
+Containerized Infrastructure
+
+All services run with Docker.
+
+Docker Services
+ ├── PostgreSQL
+ ├── Kafka
+ ├── Debezium
+ ├── MinIO
+ ├── Airflow
+ └── dbt
+CI/CD Pipeline
+
+Using GitHub Actions:
+
+Pipeline includes:
+
+1. Code validation
+2. Python linting
+3. dbt tests
+4. Docker build
+5. Pipeline deployment
+📦 Project Structure
+modern-datastack-ecommerce
+│
+├── docker-compose.yml
+├── consumer
+│
+├── kafka-debezium
+│
+├── marketing_dbt
+│
+├── data-source
+│
+├── docker
+│
+└── dags
+💻 Skills Demonstrated
+
+This project demonstrates skills in:
+
+Data Engineering
+
+Real-time data pipelines
+
+Change Data Capture
+
+Streaming architectures
+
+Data Lakehouse design
+
+ELT workflows
+
+DataOps / DevOps
+
+Technologies used:
+
+Kafka
+Debezium
+Airflow
+dbt
+PostgreSQL
+MinIO
+Docker
+GitHub Actions
+🧠 Why This Project Matters
+
+This architecture represents modern production-grade data platforms used in industry, including:
+
+ecommerce analytics
+
+real-time monitoring
+
+event-driven architectures
+
+scalable data pipelines
+
+📈 Future Improvements
+
+Possible extensions:
+
+Data quality monitoring
+
+Great Expectations
+
+OpenLineage
+
+Data Catalog (DataHub)
+
+Kubernetes deployment
+
+👨‍💻 Author
+
+Sory Diallo
+
+Data Engineer | DataOps | DevOps
 
