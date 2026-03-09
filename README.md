@@ -71,3 +71,11 @@ deduplication
 🥇 Gold (Business)
 
 Business-ready datasets.
+
+<img width="937" height="467" alt="image" src="https://github.com/user-attachments/assets/9b947cfa-ca99-4ff9-bca1-6291cf1a7ec1" />
+
+
+<img width="538" height="337" alt="image" src="https://github.com/user-attachments/assets/77c27726-9836-46b0-8a7d-837b280f5058" />
+
+
+
