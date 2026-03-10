@@ -83,12 +83,17 @@ Business-ready datasets.
 
 <img width="937" height="467" alt="image" src="https://github.com/user-attachments/assets/9b947cfa-ca99-4ff9-bca1-6291cf1a7ec1" />
 
-📊 Final Deliverables
-Automated CDC pipeline from S3 → Postgres
-DBT models (facts, dimensions, snapshots)
-Orchestrated DAGs in Airflow
-Synthetic banking dataset for demos
-CI/CD workflows ensuring reliability
+## 📊 Final Deliverables
+
+- <span style="background-color:#1f6feb;color:white;padding:4px 8px;border-radius:6px;">Automated CDC pipeline from S3 → PostgreSQL</span>
+
+- <span style="background-color:#1f6feb;color:white;padding:4px 8px;border-radius:6px;">DBT models (facts, dimensions, snapshots)</span>
+
+- <span style="background-color:#1f6feb;color:white;padding:4px 8px;border-radius:6px;">Orchestrated DAGs in Apache Airflow</span>
+
+- <span style="background-color:#1f6feb;color:white;padding:4px 8px;border-radius:6px;">Synthetic banking dataset for demos</span>
+
+- <span style="background-color:#1f6feb;color:white;padding:4px 8px;border-radius:6px;">CI/CD workflows ensuring reliability</span>
 
 <img width="538" height="337" alt="image" src="https://github.com/user-attachments/assets/77c27726-9836-46b0-8a7d-837b280f5058" />
 
