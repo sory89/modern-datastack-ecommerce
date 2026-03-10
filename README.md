@@ -26,6 +26,15 @@ End-to-end **Modern Data Engineering pipeline** that captures ecommerce data cha
 
 This project demonstrates a Modern Data Stack pipeline that processes ecommerce transactional data in real-time using streaming and ELT architecture.
 
+Pipeline Flow:
+
+Data Generator → Simulates banking transactions, accounts & customers (via Faker).
+Kafka + Debezium → Streams change data (CDC) into MinIO (S3-compatible storage).
+Airflow → Orchestrates data ingestion & snapshots into Snowflake.
+PostgreSQL → Data Warehouse (Bronze → Silver → Gold).
+DBT → Applies transformations, builds marts & snapshots (SCD Type-2).
+CI/CD with GitHub Actions → Automated tests, build & deployment.
+
 Key features
 
 Change Data Capture using Debezium
